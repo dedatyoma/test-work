@@ -2,14 +2,14 @@
   font-family: 'Inter';
 }
 body{
-  background:linear-gradient(180deg, black 60%, rgba(143, 192, 230, 0.15))
+  background:linear-gradient(180deg, black 60%, rgba(143, 192, 230, 0.15));
 }
 @font-face {
   font-family: 'ClashGrotesk';
   src: url(./fonts/ClashGrotesk-Variable.ttf);
 }
 .blue-void{
-  width: 100%;
+  width: 90%;
   position: absolute;
   top:-10px;
   left: 150px
@@ -48,6 +48,7 @@ header p{
   transition: 0.2s;
 }
 .indicators {
+  max-width: 90%;
   display: flex;
   gap: 60px;
   justify-content: center;
@@ -90,6 +91,11 @@ header p{
   font-size: 22px;
   margin-top: 12px;
   transition: all 0.3s ease;
+}
+@media screen and (max-width:1920px) {
+  .indicator-box{
+    max-width: 400px;
+  }
 }
 @media screen and (max-width:1532px) {
   .indicator-box{

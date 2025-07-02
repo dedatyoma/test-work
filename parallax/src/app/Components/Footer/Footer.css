@@ -46,18 +46,18 @@ hr{
   height:70%;
   position: absolute;
   z-index: -1;
-  width: 120%;
+  width: 100%;
   margin-top:-100px;
   right:1px
 }
 @media screen and (max-width:1532px) {
   .surface{
-    margin-top: 100px;
+    margin-top: -150px;
   }
 }
 @media screen and (max-width:1440px) {
   .surface{
-    margin-top: 100px;
+   margin-top: -150px;
   }
 }
 @media screen and (max-width:1250px) {
@@ -71,7 +71,7 @@ hr{
 }
 @media screen and (max-width:1024px) {
   .surface{
-    margin-top: 200px;
+   margin-top: -150px;
   }
   .last-text{
     position: relative;
@@ -80,7 +80,7 @@ hr{
 }
 @media screen and (max-width:768px) {
   .surface{
-    margin-top: 300px;
+    margin-top: -150px;
   }
   .last-text{
     position: relative;

@@ -41,7 +41,7 @@
 }
 
 .main-par{
-  width: 90%;
+  max-width: 90%;
   font-size: 24px;
   margin-bottom: 36px;
   color: white;
@@ -92,6 +92,12 @@
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width:1920px) {
+  .mainH1{
+    max-width: 95%;
+    font-size: 120px;
+  }
+}
 @media screen and (max-width:1532px) {
   .mainH1{
     font-size: 110px;
@@ -99,6 +105,7 @@
 }
 @media screen and (max-width:1440px) {
   .mainH1{
+    width: 90%;
     font-size: 100px;
   }
 }
