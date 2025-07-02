@@ -1,20 +1,22 @@
 "use client"
 import "./pagestyles.css"
 import React, { useState, useEffect } from 'react'
+import Header from "./Components/Header/Header"
 import Start from '@/app/Components/Start/Start'
 import Sponsores from "./Components/Sponsors/Sponsors"
 import Community from "./Components/Community/Community"
 import Footer from './Components/Footer/Footer'
-import { ParallaxProvider, useParallax } from "react-scroll-parallax"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 
 export default function page () {
+
   const [showIndicators, setShowIndicators] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
-      if (scrollPosition > 100) {
+      if (scrollPosition > 200) {
         setShowIndicators(true)
       } else {
         setShowIndicators(false)
@@ -46,10 +48,7 @@ export default function page () {
     <ParallaxProvider>
       <div className="main">
         <img className="blue-void" src="./Vector6.png" alt="" />
-        <header>
-          <p>How It Works</p>
-          <button className="header-buy"><span>Buy Salt AI</span></button>
-        </header>
+          <Header/>
           <Start/>
         <div className={`indicators ${showIndicators ? 'visible' : ''}`}>
           {indicators.map((item, idx) => {
@@ -61,7 +60,6 @@ export default function page () {
             )
             })}
         </div>
-        
         <Sponsores/>
         <Community/>
         <Footer/>

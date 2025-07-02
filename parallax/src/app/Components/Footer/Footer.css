@@ -43,15 +43,30 @@ hr{
   margin-right: 50px;
 }
 .surface{
+  height:70%;
   position: absolute;
   z-index: -1;
   width: 120%;
   margin-top:-100px;
   right:1px
 }
+@media screen and (max-width:1532px) {
+  .surface{
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width:1440px) {
   .surface{
     margin-top: 100px;
+  }
+}
+@media screen and (max-width:1250px) {
+  .surface{
+    margin-top: -150px;
+  }
+  .last-text{
+    position: relative;
+    top:50px;
   }
 }
 @media screen and (max-width:1024px) {

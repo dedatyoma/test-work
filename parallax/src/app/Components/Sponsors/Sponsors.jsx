@@ -6,27 +6,27 @@ import { useParallax } from 'react-scroll-parallax'
 export default function Sponsores () {
   
   const solanaParallax = useParallax({
-    translateX: [-120, 50], 
+    translateX: [-100, 40], 
     easing: "easeInOut",
   });
 
   const arweaveParallax = useParallax({
-    translateX: [-120, 50], 
+    translateX: [-100, 50], 
     easing: "easeInOut",
   });
 
   const bittensorParallax = useParallax({
-    translateX: [-120, 50], 
+    translateX: [-140, 70], 
     easing: "easeInOut",
   });
 
   const redRoundParallax = useParallax({
-    translateX: [-100, 80],  
+    translateX: [-550, 250],  
     easing: "easeInOut",
   });
 
   const telegramParallax = useParallax({
-    translateX: [-100, 90], 
+    translateX: [-550, 250], 
     easing: "easeInOut",
   });
 

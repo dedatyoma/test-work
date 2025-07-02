@@ -6,10 +6,10 @@ import { useParallax } from "react-scroll-parallax"
 export default function Start () {
 
   const parallax = useParallax({
-    speed: -30,
+    speed: -13,
   })
   const parallax2 = useParallax({
-    speed:-40,
+    speed:-20,
     translateX: [0,-5],
     scaleX: [1.03, 0.94, 'easeInQuad'],
   })

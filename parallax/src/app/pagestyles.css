@@ -9,6 +9,7 @@ body{
   src: url(./fonts/ClashGrotesk-Variable.ttf);
 }
 .blue-void{
+  width: 100%;
   position: absolute;
   top:-10px;
   left: 150px
@@ -50,8 +51,6 @@ header p{
   display: flex;
   gap: 60px;
   justify-content: center;
-  margin-top: 250px;
-  margin-bottom: 100px;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -66,7 +65,6 @@ header p{
   border-radius: 100px;
   width: 564px;
   height: 190px;
-  margin-top: 100px;
   margin-bottom: 300px;
   display: flex;
   flex-direction: column;
@@ -77,7 +75,6 @@ header p{
 }
 
 .indicator-box:hover {
-  transform: scale(1.05);
   background: linear-gradient(135deg, rgba(181,62,164,0.4), rgba(252,111,50,0.4), rgba(255,74,89,0.4));
 }
 
@@ -94,7 +91,12 @@ header p{
   margin-top: 12px;
   transition: all 0.3s ease;
 }
-
+@media screen and (max-width:1532px) {
+  .indicator-box{
+    width: 404px;
+    height: 150px;
+  }
+}
 @media screen and (max-width:1440px) {
   .indicator-box{
     width: 364px;
@@ -102,6 +104,11 @@ header p{
   }
   .indicator-value{
      font-size: 45px;
+  }
+}
+@media screen and (max-width:1250px) {
+  .blue-void{
+    left: 10px;
   }
 }
 @media screen and (max-width:1024px) {

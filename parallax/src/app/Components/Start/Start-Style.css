@@ -9,6 +9,7 @@
 }
 
 .mainH1{
+  width: 100%;
   font-family: 'ClashGrotesk';
   font-size: 128px;
   font-weight: 500;
@@ -40,6 +41,7 @@
 }
 
 .main-par{
+  width: 90%;
   font-size: 24px;
   margin-bottom: 36px;
   color: white;
@@ -90,9 +92,20 @@
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width:1532px) {
+  .mainH1{
+    font-size: 110px;
+  }
+}
 @media screen and (max-width:1440px) {
   .mainH1{
     font-size: 100px;
+  }
+}
+@media screen and (max-width:1250px) {
+  .mainH1{
+    width: 1140px;
+    font-size: 90px;
   }
 }
 @media screen and (max-width:1024px) {

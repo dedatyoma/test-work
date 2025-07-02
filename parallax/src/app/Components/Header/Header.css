@@ -1,0 +1,33 @@
+header{
+ display: flex;
+ align-items: center;
+ position: relative;
+ justify-content: center;
+ margin-bottom: 8vw;
+ margin-top: 2vw;
+ z-index: 1;
+}
+header p{
+  cursor: pointer;
+}
+.header-buy{
+  display: inline-block;
+  position: relative;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  margin-left: 2vw;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #B53EA4, #FC6F32, #FF4A59);
+  padding: 2px;
+  cursor: pointer;
+}
+.header-buy span{
+  display: block;
+  background: #111;
+  border-radius: 38px;
+  padding: 1vw 1vw;
+}
+.header-buy span:hover{
+  background: transparent;
+  transition: 0.2s;
+}

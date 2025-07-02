@@ -6,6 +6,7 @@
 }
 .community-text{
   width: 941px;
+  margin-left: 20px;
 }
 .community-text h2{
   font-size: 64px;
@@ -21,13 +22,29 @@
 .comm-img img{
   cursor: pointer;
 }
+@media screen and (max-width:1532px) {
+  .community h2{
+    margin: 0;
+  }
+}
 @media screen and (max-width:1440px) {
   .community{
     align-items: center;
   }
+   .community h2{
+    margin: 0;
+  }
   .moon-img{
     width: 300px;
     height: 300px;
+  }
+}
+@media screen and (max-width:1250px){
+  .community-text{
+    margin-left: 30px;
+  }
+  .moon-img{
+    margin-right: 20px;
   }
 }
 @media screen and (max-width:1024px) {
@@ -40,7 +57,7 @@
     height: 250px;
   }
   .community-text{
-  width: 941px;
+    width: 941px;
   }
   .community-text h2{
     font-size: 54px;
