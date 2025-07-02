@@ -1,0 +1,47 @@
+.sponsores{
+  margin-top:300px;
+  margin-bottom: 200px;
+  overflow: hidden; 
+}
+h2{
+  font-family: 'ClashGrotesk';
+  font-weight: 500;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+@media screen and (max-width:1440px) {
+  .socials img{
+    width: 200px;
+  }
+  .social-round-img{
+    width: 100px !important; 
+    height: 100px;
+  }
+}
+@media screen and (max-width:1024px) {
+   .socials img{
+    width: 150px;
+    gap:50px
+  }
+  .social-round-img{
+    width: 50px !important; 
+    height: 50px;
+  }
+}
+@media screen and (max-width:768px){
+  .socials img{
+    width:150px;
+  }
+  .socials{
+    gap:40px;
+    margin-left: 10px;
+  }
+}

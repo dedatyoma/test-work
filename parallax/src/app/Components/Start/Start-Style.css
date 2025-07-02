@@ -1,0 +1,135 @@
+.start{
+  position: relative;
+  min-height: 600px; 
+  display: flex;
+  align-items: flex-start;
+  margin-left: 80px;
+  transition: all 0.3s ease;
+  margin-bottom: 500px;
+}
+
+.mainH1{
+  font-family: 'ClashGrotesk';
+  font-size: 128px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #B53EA4,#FC6F32,#FF4A59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  width: 1629px;
+  margin-bottom: 36px;
+  position: relative;
+}
+.mainH1::before {
+  content: 'A new economic primitive for funding decentralized AI';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #FFD6F9, #FFCBB4, #FFBEC3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.mainH1.scrolled-text::before {
+  opacity: 1;
+}
+
+.main-par{
+  font-size: 24px;
+  margin-bottom: 36px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.buy {
+  font-size: 24px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #B53EA4, #FC6F32, #FF4A59);
+  color: #fff;
+  cursor: pointer;
+  padding: 2px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy span {
+  display: block;
+  background: #111;
+  border-radius: 38px;
+  padding: 22px 40px;
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+.buy span:hover{
+  background: transparent;
+  transition: 0.2s;
+}
+
+.darkside {
+  position: absolute;
+  right: -50px;
+  top: -156px;           
+  width: 1016px;       
+  height: 1016px;
+  z-index: -1;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width:1440px) {
+  .mainH1{
+    font-size: 100px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .mainH1{
+    width: 900px;
+    font-size: 60px;
+    margin-left: -30px;
+  }
+  .main-par{
+    font-size:20px;
+    margin-left: -30px;
+  }
+  .buy{
+    margin-left: -30px;
+  }
+  .buy span{
+     padding: 12px 30px;
+  }
+  .darkside{
+     width: 800px;       
+    height: 800px;
+  }
+}
+@media screen and (max-width:768px) {
+  .mainH1{
+    width: 750px;
+    font-size: 55px;
+    margin-left: -40px;
+  }
+  .main-par{
+    font-size:17px;
+    margin-left: -40px;
+  }
+  .buy{
+    margin-left: -40px;
+  }
+  .buy span{
+     padding: 15px 20px;
+  }
+}
