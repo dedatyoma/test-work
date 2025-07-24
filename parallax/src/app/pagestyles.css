@@ -51,6 +51,7 @@ header p{
   max-width: 90%;
   display: flex;
   gap: 60px;
+  margin: 0 auto;
   justify-content: center;
   opacity: 0;
   transform: translateY(50px);
